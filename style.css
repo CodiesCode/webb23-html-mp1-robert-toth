@@ -1,0 +1,224 @@
+* {
+    /* Margin och padding för hela sidan borttaget */
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    /* Gradialt mörkad bakgrundsbild */
+    max-width: 100%;
+    min-height: 96vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(Bilder/IMG_20200214_153917.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    /* Navigeringsfältets kriterier */
+    width: 85%;
+    margin: auto;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    /* Min logotyps storlek */
+    width: 120px;
+}
+.navbar ul li {
+    /* Orientering av navbar länkarna */
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    /* Textfärg på navbar länkarna */
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    /* Interaktiv linje under navbarlänkarna */
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #3f946a;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    /* Interaktiv linje under navbarlänkarna */
+    width: 100%;
+}
+
+.content {
+    /* Text på indexsidan tillsammans med bild */
+    width: 100%;
+    top: 60%;
+    text-align: center;
+    color: white;
+}
+
+.avatar {
+    /* Bild på mig med storlek och hover-effekt */
+    cursor: pointer;
+    max-width: 150px;
+    height: auto;
+    border-radius: 200px;
+    border-style: groove;
+}
+
+.content h1 {
+    /* Storlek, position och typsnitt på H1  */
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content p {
+    /* Olika attributer för paragraftext */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin: 10px auto;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: normal;
+    color: #3f946a;
+}
+.content2 {
+    /* En klass på min insposidan med olika attributer */
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #3f946a;
+}
+.content2 h2 {
+    /* Rubriktext med kursiv på insposidan */
+    font-size: 1.5rem;
+    margin-top: 200px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    /* Frågeformulärets box och dess storlek samt attributer */
+    max-width: 750px;
+    height: 750px;
+    background: #fff;
+    margin: auto;
+    box-shadow: 0 0 20px #fdfdfda0;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h3 {
+    /* "Kontakta oss" titeln i frågeformuläret  */
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: clamp(2rem, 1rem + 10vw, 5rem);
+    margin-bottom: 20px;
+    color: #3f946a;
+}
+.div1 {
+    /* Hyperlänkar och dess färger på insposidan */
+    color: #3f946a;
+}
+a:visited {
+    color: #3f946a;
+}
+a:link {
+    color: #3f946a;
+}
+a:hover {
+    color: red;
+}
+.login {
+    /* Typsnitt på inputnamnen i kontaktformuläret */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+input {
+    /* Attribut för formulärfältet i frågeformuläret på "Kontakt" sidan */
+    max-width: 100%;
+    float: left;
+    margin-right: 4%;
+}
+
+input:last-child {
+    /* Ändra sista delen av input */
+    margin-right: 0;
+}
+
+.area {
+    /* Fritextfältet i formuläret och dess storlek på höjden */
+    height: 150px;
+}
+.list {
+    /* Mellanrum i listan på insposidan för hyperlänkarna  */
+    margin: auto;
+    width: 80px;
+    max-height: auto;
+}
+input,
+.area {
+    /* Meddelanderutan för fritext på "Kontakt" sidan */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    transform: all 0.5s ease;
+}
+.submit {
+    /* "Skicka Meddelande" knappen i formuläret på "Kontakt"sidan */
+    width: 200px;
+    background: #3f946a;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.submit:hover {
+    /* Ändra färg på "Skicka meddelande" knappen när man hovrar över den med muspekaren */
+    background-color: #285e43;
+    transition: 0.5s;
+}
+
+footer {
+    /* Storlek och färg på footern  */
+    background: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    color: white;
+}
+.footer-content {
+    /* Footerns position på sidorna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+@media only screen (min-width: 320px) and (max-width: 480px) {
+    /* Minimum och maximum bredd på skärmarna som tillåts i mobila enheter */
+}
